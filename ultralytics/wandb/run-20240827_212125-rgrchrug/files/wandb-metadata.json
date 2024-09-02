@@ -1,0 +1,131 @@
+{
+    "os": "Linux-5.4.0-150-generic-x86_64-with-glibc2.17",
+    "python": "3.8.19",
+    "heartbeatAt": "2024-08-27T12:21:25.678097",
+    "startedAt": "2024-08-27T12:21:25.070152",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/yjlee/.config/Ultralytics/DDP/_temp_mhqkopy0140235603799728.py",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/yeong4806/yolo_pruning.git",
+        "commit": "6f34ea4bd8e64bff1a6937da2f456d1bd3087c4f"
+    },
+    "email": "dudwn0023@gmail.com",
+    "root": "/home/yjlee/yolo_pruning",
+    "host": "baro2",
+    "username": "yjlee",
+    "executable": "/home/yjlee/anaconda3/envs/yolo/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 4639.6331875,
+        "min": 800.0,
+        "max": 4800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4600.862,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4607.279,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4604.086,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4622.046,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4659.055,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4645.918,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4604.188,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4695.67,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4660.529,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4694.321,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4607.956,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4670.771,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4606.887,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4605.537,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4664.095,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4684.931,
+            "min": 800.0,
+            "max": 4800.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 915.8154449462891,
+            "used": 652.2189407348633
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11553341440
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11554717696
+        }
+    ],
+    "memory": {
+        "total": 62.70969009399414
+    }
+}

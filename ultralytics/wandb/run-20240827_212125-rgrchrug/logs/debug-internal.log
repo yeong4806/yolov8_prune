@@ -1,0 +1,602 @@
+2024-08-27 21:21:25,073 INFO    StreamThr :17731 [internal.py:wandb_internal():85] W&B internal server running at pid: 17731, started at: 2024-08-27 21:21:25.072916
+2024-08-27 21:21:25,074 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status
+2024-08-27 21:21:25,078 INFO    WriterThread:17731 [datastore.py:open_for_write():87] open: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/run-rgrchrug.wandb
+2024-08-27 21:21:25,078 DEBUG   SenderThread:17731 [sender.py:send():391] send: header
+2024-08-27 21:21:25,084 DEBUG   SenderThread:17731 [sender.py:send():391] send: run
+2024-08-27 21:21:25,597 INFO    SenderThread:17731 [dir_watcher.py:__init__():211] watching files in: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files
+2024-08-27 21:21:25,597 INFO    SenderThread:17731 [sender.py:_start_run_threads():1200] run started: rgrchrug with start time 1724761285.075481
+2024-08-27 21:21:25,600 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: check_version
+2024-08-27 21:21:25,601 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: check_version
+2024-08-27 21:21:25,653 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: run_start
+2024-08-27 21:21:25,654 DEBUG   HandlerThread:17731 [system_info.py:__init__():26] System info init
+2024-08-27 21:21:25,655 DEBUG   HandlerThread:17731 [system_info.py:__init__():41] System info init done
+2024-08-27 21:21:25,655 INFO    HandlerThread:17731 [system_monitor.py:start():194] Starting system monitor
+2024-08-27 21:21:25,655 INFO    SystemMonitor:17731 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-27 21:21:25,655 INFO    HandlerThread:17731 [system_monitor.py:probe():214] Collecting system info
+2024-08-27 21:21:25,655 INFO    SystemMonitor:17731 [interfaces.py:start():188] Started cpu monitoring
+2024-08-27 21:21:25,656 INFO    SystemMonitor:17731 [interfaces.py:start():188] Started disk monitoring
+2024-08-27 21:21:25,656 INFO    SystemMonitor:17731 [interfaces.py:start():188] Started gpu monitoring
+2024-08-27 21:21:25,656 INFO    SystemMonitor:17731 [interfaces.py:start():188] Started memory monitoring
+2024-08-27 21:21:25,657 INFO    SystemMonitor:17731 [interfaces.py:start():188] Started network monitoring
+2024-08-27 21:21:25,678 DEBUG   HandlerThread:17731 [system_info.py:probe():152] Probing system
+2024-08-27 21:21:25,680 DEBUG   HandlerThread:17731 [system_info.py:_probe_git():137] Probing git
+2024-08-27 21:21:25,685 DEBUG   HandlerThread:17731 [system_info.py:_probe_git():145] Probing git done
+2024-08-27 21:21:25,685 DEBUG   HandlerThread:17731 [system_info.py:probe():200] Probing system done
+2024-08-27 21:21:25,685 DEBUG   HandlerThread:17731 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-150-generic-x86_64-with-glibc2.17', 'python': '3.8.19', 'heartbeatAt': '2024-08-27T12:21:25.678097', 'startedAt': '2024-08-27T12:21:25.070152', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/yjlee/.config/Ultralytics/DDP/_temp_mhqkopy0140235603799728.py', 'codePathLocal': None, 'git': {'remote': 'https://github.com/yeong4806/yolo_pruning.git', 'commit': '6f34ea4bd8e64bff1a6937da2f456d1bd3087c4f'}, 'email': 'dudwn0023@gmail.com', 'root': '/home/yjlee/yolo_pruning', 'host': 'baro2', 'username': 'yjlee', 'executable': '/home/yjlee/anaconda3/envs/yolo/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 4639.6331875, 'min': 800.0, 'max': 4800.0}, 'cpu_freq_per_core': [{'current': 4600.862, 'min': 800.0, 'max': 4800.0}, {'current': 4607.279, 'min': 800.0, 'max': 4800.0}, {'current': 4604.086, 'min': 800.0, 'max': 4800.0}, {'current': 4622.046, 'min': 800.0, 'max': 4800.0}, {'current': 4659.055, 'min': 800.0, 'max': 4800.0}, {'current': 4645.918, 'min': 800.0, 'max': 4800.0}, {'current': 4604.188, 'min': 800.0, 'max': 4800.0}, {'current': 4695.67, 'min': 800.0, 'max': 4800.0}, {'current': 4660.529, 'min': 800.0, 'max': 4800.0}, {'current': 4694.321, 'min': 800.0, 'max': 4800.0}, {'current': 4607.956, 'min': 800.0, 'max': 4800.0}, {'current': 4670.771, 'min': 800.0, 'max': 4800.0}, {'current': 4606.887, 'min': 800.0, 'max': 4800.0}, {'current': 4605.537, 'min': 800.0, 'max': 4800.0}, {'current': 4664.095, 'min': 800.0, 'max': 4800.0}, {'current': 4684.931, 'min': 800.0, 'max': 4800.0}], 'disk': {'/': {'total': 915.8154449462891, 'used': 652.2189407348633}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11553341440}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11554717696}], 'memory': {'total': 62.70969009399414}}
+2024-08-27 21:21:25,685 INFO    HandlerThread:17731 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-27 21:21:25,685 INFO    HandlerThread:17731 [system_monitor.py:probe():227] Publishing system info
+2024-08-27 21:21:25,685 DEBUG   HandlerThread:17731 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-08-27 21:21:26,598 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/conda-environment.yaml
+2024-08-27 21:21:27,055 DEBUG   HandlerThread:17731 [system_info.py:_save_conda():224] Saving conda packages done
+2024-08-27 21:21:27,056 INFO    HandlerThread:17731 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-27 21:21:27,064 DEBUG   SenderThread:17731 [sender.py:send():391] send: files
+2024-08-27 21:21:27,064 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-08-27 21:21:27,114 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-27 21:21:27,114 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: python_packages
+2024-08-27 21:21:27,115 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:27,116 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 21:21:27,116 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 21:21:27,497 DEBUG   SenderThread:17731 [sender.py:send():391] send: telemetry
+2024-08-27 21:21:27,597 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/conda-environment.yaml
+2024-08-27 21:21:27,597 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/requirements.txt
+2024-08-27 21:21:27,598 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/wandb-metadata.json
+2024-08-27 21:21:27,598 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:28,115 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:28,117 INFO    wandb-upload_0:17731 [upload_job.py:push():130] Uploaded file /tmp/tmp4d9pwsjlwandb/b0m59na0-wandb-metadata.json
+2024-08-27 21:21:29,115 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:29,598 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:30,115 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:30,268 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:21:31,116 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:31,598 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:32,137 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:32,599 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:33,140 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:33,599 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:34,144 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:34,599 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:35,144 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:35,599 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:35,995 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:21:36,145 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:37,150 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:37,600 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:38,146 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:38,600 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:39,146 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:40,146 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:40,601 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:41,056 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:21:41,146 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:42,115 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 21:21:42,115 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 21:21:42,147 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:42,601 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:43,147 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:44,147 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:44,602 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:45,147 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:46,110 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:21:46,147 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:46,602 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:47,147 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:48,147 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:48,603 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:49,147 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:50,147 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:50,603 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:51,147 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:51,151 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:21:52,147 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:52,604 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:53,148 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:54,148 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:54,604 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:55,148 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:55,325 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:21:55,325 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:21:55,325 DEBUG   SenderThread:17731 [sender.py:send():391] send: telemetry
+2024-08-27 21:21:56,148 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:56,159 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:21:56,605 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/config.yaml
+2024-08-27 21:21:56,605 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:57,127 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 21:21:57,128 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 21:21:57,148 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:58,166 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:21:58,605 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:21:59,166 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:00,166 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:00,606 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:01,167 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:01,459 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:22:01,801 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:22:02,167 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:02,229 DEBUG   SenderThread:17731 [sender.py:send():391] send: files
+2024-08-27 21:22:02,229 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file media/images/labels_1_a8cbeb115a6e2a50b2c3.jpg with policy now
+2024-08-27 21:22:02,230 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:22:02,252 DEBUG   SenderThread:17731 [sender.py:send():391] send: files
+2024-08-27 21:22:02,252 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file media/images/train_batch0_1_1f3f9521a436f278da57.jpg with policy now
+2024-08-27 21:22:02,252 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:22:02,268 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:22:02,268 DEBUG   SenderThread:17731 [sender.py:send():391] send: files
+2024-08-27 21:22:02,268 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file media/images/train_batch1_1_a7ddb3a67e6c1f6108a8.jpg with policy now
+2024-08-27 21:22:02,284 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:22:02,284 DEBUG   SenderThread:17731 [sender.py:send():391] send: files
+2024-08-27 21:22:02,284 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file media/images/train_batch2_1_6ff226cf5ae600ef7926.jpg with policy now
+2024-08-27 21:22:02,332 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:22:02,606 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:02,606 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/media/images/labels_1_a8cbeb115a6e2a50b2c3.jpg
+2024-08-27 21:22:02,607 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/media/images/train_batch0_1_1f3f9521a436f278da57.jpg
+2024-08-27 21:22:02,607 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/media/images/train_batch1_1_a7ddb3a67e6c1f6108a8.jpg
+2024-08-27 21:22:02,607 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/media/images/train_batch2_1_6ff226cf5ae600ef7926.jpg
+2024-08-27 21:22:02,607 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/media/images
+2024-08-27 21:22:02,607 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/media
+2024-08-27 21:22:03,167 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:03,352 INFO    wandb-upload_0:17731 [upload_job.py:push():130] Uploaded file /tmp/tmp4d9pwsjlwandb/s56g4lk7-media/images/labels_1_a8cbeb115a6e2a50b2c3.jpg
+2024-08-27 21:22:03,606 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:04,087 INFO    wandb-upload_1:17731 [upload_job.py:push():130] Uploaded file /tmp/tmp4d9pwsjlwandb/js0137wo-media/images/train_batch0_1_1f3f9521a436f278da57.jpg
+2024-08-27 21:22:04,158 INFO    wandb-upload_3:17731 [upload_job.py:push():130] Uploaded file /tmp/tmp4d9pwsjlwandb/6ejl49mj-media/images/train_batch2_1_6ff226cf5ae600ef7926.jpg
+2024-08-27 21:22:04,167 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:04,467 INFO    wandb-upload_2:17731 [upload_job.py:push():130] Uploaded file /tmp/tmp4d9pwsjlwandb/92lod97p-media/images/train_batch1_1_a7ddb3a67e6c1f6108a8.jpg
+2024-08-27 21:22:04,468 INFO    wandb-upload_0:17731 [upload_job.py:push():130] Uploaded file /tmp/tmp4d9pwsjlwandb/4x9xlhp0-media/images/labels_1_a8cbeb115a6e2a50b2c3.jpg
+2024-08-27 21:22:04,607 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:05,167 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:05,752 INFO    wandb-upload_1:17731 [upload_job.py:push():130] Uploaded file /tmp/tmp4d9pwsjlwandb/mwmx5buj-media/images/train_batch0_1_1f3f9521a436f278da57.jpg
+2024-08-27 21:22:06,073 INFO    wandb-upload_0:17731 [upload_job.py:push():130] Uploaded file /tmp/tmp4d9pwsjlwandb/iptrnoek-media/images/train_batch2_1_6ff226cf5ae600ef7926.jpg
+2024-08-27 21:22:06,134 INFO    wandb-upload_2:17731 [upload_job.py:push():130] Uploaded file /tmp/tmp4d9pwsjlwandb/0nv9xvjw-media/images/train_batch1_1_a7ddb3a67e6c1f6108a8.jpg
+2024-08-27 21:22:06,167 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:06,548 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:22:06,607 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:07,167 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:08,167 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:08,608 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:09,167 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:10,168 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:10,609 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:11,168 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:11,573 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:22:12,127 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 21:22:12,128 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 21:22:12,168 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:12,609 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:13,168 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:14,168 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:14,610 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:15,170 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:16,170 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:16,602 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:22:17,170 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:18,170 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:18,611 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:19,171 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:19,649 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:22:19,650 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:22:19,651 DEBUG   SenderThread:17731 [sender.py:send():391] send: history
+2024-08-27 21:22:19,651 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: summary_record
+2024-08-27 21:22:19,651 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-27 21:22:20,171 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:20,612 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:20,612 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/wandb-summary.json
+2024-08-27 21:22:21,171 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:21,620 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:22:22,190 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:22,613 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:23,191 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:24,193 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:24,613 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:25,198 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:25,657 DEBUG   SystemMonitor:17731 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-27 21:22:25,658 DEBUG   SenderThread:17731 [sender.py:send():391] send: stats
+2024-08-27 21:22:26,149 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:22:26,198 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:26,614 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:26,674 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:22:27,128 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 21:22:27,128 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 21:22:27,198 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:27,614 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:28,198 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:28,615 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:29,198 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:30,198 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:30,615 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:31,198 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:31,691 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:22:32,198 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:32,616 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:33,199 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:34,199 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:34,618 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:35,199 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:36,199 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:36,619 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:36,754 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:22:37,199 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:38,199 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:38,619 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:39,199 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:40,199 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:40,620 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:41,199 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:41,822 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:22:42,128 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 21:22:42,128 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 21:22:42,200 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:42,500 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:22:42,501 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:22:42,511 DEBUG   SenderThread:17731 [sender.py:send():391] send: history
+2024-08-27 21:22:42,511 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: summary_record
+2024-08-27 21:22:42,511 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-27 21:22:42,620 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/wandb-summary.json
+2024-08-27 21:22:42,621 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:43,199 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:44,204 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:44,621 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:45,212 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:46,218 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:46,622 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:46,911 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:22:47,218 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:48,218 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:48,622 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:48,682 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:22:49,219 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:49,622 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:50,219 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:50,623 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:51,219 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:51,998 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:22:52,247 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:52,624 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:53,219 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:54,219 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:54,624 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:55,219 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:55,658 DEBUG   SenderThread:17731 [sender.py:send():391] send: stats
+2024-08-27 21:22:56,219 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:56,625 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:57,083 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:22:57,128 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 21:22:57,128 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 21:22:57,220 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:58,220 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:22:58,626 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:22:59,220 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:00,220 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:00,626 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:01,220 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:02,142 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:23:02,220 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:02,627 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:03,220 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:04,220 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:04,628 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:05,220 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:05,283 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:23:05,283 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:23:05,284 DEBUG   SenderThread:17731 [sender.py:send():391] send: history
+2024-08-27 21:23:05,284 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: summary_record
+2024-08-27 21:23:05,284 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-27 21:23:05,628 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/wandb-summary.json
+2024-08-27 21:23:06,220 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:06,628 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:07,142 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:23:07,220 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:08,232 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:08,629 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:09,243 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:10,260 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:10,630 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:10,819 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:23:11,260 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:11,630 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:12,128 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 21:23:12,128 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 21:23:12,260 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:12,359 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:23:12,630 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:13,261 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:14,261 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:14,631 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:15,261 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:16,261 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:16,631 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:17,261 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:17,366 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:23:18,261 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:18,632 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:19,261 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:20,261 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:20,633 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:21,261 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:22,261 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:22,387 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:23:22,633 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:23,262 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:24,262 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:24,634 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:25,262 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:25,659 DEBUG   SenderThread:17731 [sender.py:send():391] send: stats
+2024-08-27 21:23:26,262 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:26,635 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:27,060 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:23:27,061 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:23:27,061 DEBUG   SenderThread:17731 [sender.py:send():391] send: history
+2024-08-27 21:23:27,062 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: summary_record
+2024-08-27 21:23:27,062 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-27 21:23:27,128 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 21:23:27,128 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 21:23:27,262 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:27,416 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:23:27,635 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/wandb-summary.json
+2024-08-27 21:23:28,262 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:28,635 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:29,262 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:30,263 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:30,636 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:31,262 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:32,267 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:32,573 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:23:32,581 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:23:32,637 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:33,267 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:33,637 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:34,267 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:34,637 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:35,267 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:36,268 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:36,638 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:37,268 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:37,591 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:23:38,268 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:38,638 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:39,268 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:40,268 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:40,639 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:41,268 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:42,128 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 21:23:42,128 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 21:23:42,268 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:42,634 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:23:42,640 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:43,268 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:44,269 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:44,641 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:45,269 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:46,269 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:46,642 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:47,269 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:47,701 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:23:48,269 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:48,642 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:48,855 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:23:48,856 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:23:48,856 DEBUG   SenderThread:17731 [sender.py:send():391] send: history
+2024-08-27 21:23:48,856 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: summary_record
+2024-08-27 21:23:48,856 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-27 21:23:49,269 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:49,643 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/wandb-summary.json
+2024-08-27 21:23:50,275 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:50,643 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:51,275 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:52,275 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:52,643 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:52,775 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:23:53,275 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:54,294 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:54,428 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:23:54,644 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:55,281 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:55,660 DEBUG   SenderThread:17731 [sender.py:send():391] send: stats
+2024-08-27 21:23:56,281 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:56,644 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:57,128 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 21:23:57,129 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 21:23:57,281 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:57,846 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:23:58,282 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:23:58,645 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:23:59,283 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:00,283 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:00,646 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:01,283 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:02,283 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:02,647 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:02,901 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:24:03,283 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:04,283 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:04,647 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:05,283 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:06,283 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:06,648 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:07,284 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:07,955 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:24:08,284 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:08,648 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:09,284 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:10,284 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:10,649 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:10,698 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:24:10,698 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:24:10,699 DEBUG   SenderThread:17731 [sender.py:send():391] send: history
+2024-08-27 21:24:10,699 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: summary_record
+2024-08-27 21:24:10,699 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-27 21:24:11,317 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:11,649 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/wandb-summary.json
+2024-08-27 21:24:12,129 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 21:24:12,129 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 21:24:12,317 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:12,650 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:13,040 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:24:13,321 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:14,321 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:14,650 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:15,329 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:16,247 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-27 21:24:16,329 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:16,651 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:17,329 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:18,060 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:24:18,329 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:18,652 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:19,329 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:20,329 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:20,652 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:21,329 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:22,330 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:22,653 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:23,104 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:24:23,330 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:24,330 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:24,654 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:25,330 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:25,661 DEBUG   SenderThread:17731 [sender.py:send():391] send: stats
+2024-08-27 21:24:26,330 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:26,654 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:26,700 DEBUG   SenderThread:17731 [sender.py:send():391] send: exit
+2024-08-27 21:24:26,700 INFO    SenderThread:17731 [sender.py:send_exit():598] handling exit code: 255
+2024-08-27 21:24:26,700 INFO    SenderThread:17731 [sender.py:send_exit():600] handling runtime: 181
+2024-08-27 21:24:26,701 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-27 21:24:26,701 INFO    SenderThread:17731 [sender.py:send_exit():606] send defer
+2024-08-27 21:24:26,701 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:26,701 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 0
+2024-08-27 21:24:26,701 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:26,702 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-08-27 21:24:26,702 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 1
+2024-08-27 21:24:26,702 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:26,702 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 1
+2024-08-27 21:24:26,702 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:26,702 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-08-27 21:24:26,702 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 2
+2024-08-27 21:24:26,702 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:26,702 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 2
+2024-08-27 21:24:26,702 INFO    HandlerThread:17731 [system_monitor.py:finish():203] Stopping system monitor
+2024-08-27 21:24:26,703 DEBUG   SystemMonitor:17731 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-27 21:24:26,703 DEBUG   SystemMonitor:17731 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-27 21:24:26,704 INFO    HandlerThread:17731 [interfaces.py:finish():200] Joined cpu monitor
+2024-08-27 21:24:26,704 INFO    HandlerThread:17731 [interfaces.py:finish():200] Joined disk monitor
+2024-08-27 21:24:26,718 INFO    HandlerThread:17731 [interfaces.py:finish():200] Joined gpu monitor
+2024-08-27 21:24:26,719 INFO    HandlerThread:17731 [interfaces.py:finish():200] Joined memory monitor
+2024-08-27 21:24:26,719 INFO    HandlerThread:17731 [interfaces.py:finish():200] Joined network monitor
+2024-08-27 21:24:26,719 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:26,719 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-08-27 21:24:26,719 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 3
+2024-08-27 21:24:26,719 DEBUG   SenderThread:17731 [sender.py:send():391] send: stats
+2024-08-27 21:24:26,720 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:26,720 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 3
+2024-08-27 21:24:26,721 DEBUG   SenderThread:17731 [sender.py:send():391] send: history
+2024-08-27 21:24:26,721 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: summary_record
+2024-08-27 21:24:26,721 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-27 21:24:26,722 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:26,722 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-08-27 21:24:26,722 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 4
+2024-08-27 21:24:26,722 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:26,722 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 4
+2024-08-27 21:24:26,722 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:26,722 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-08-27 21:24:26,722 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 5
+2024-08-27 21:24:26,722 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:26,722 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 5
+2024-08-27 21:24:26,722 DEBUG   SenderThread:17731 [sender.py:send():391] send: summary
+2024-08-27 21:24:26,723 INFO    SenderThread:17731 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-27 21:24:26,723 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:26,723 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-08-27 21:24:26,723 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 6
+2024-08-27 21:24:26,723 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:26,723 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 6
+2024-08-27 21:24:26,724 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:26,724 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-08-27 21:24:26,724 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 7
+2024-08-27 21:24:26,724 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 21:24:26,724 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:26,724 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 7
+2024-08-27 21:24:26,724 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:26,724 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-08-27 21:24:27,655 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/wandb-summary.json
+2024-08-27 21:24:27,700 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-27 21:24:28,548 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 8
+2024-08-27 21:24:28,548 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: poll_exit
+2024-08-27 21:24:28,549 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:28,549 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 8
+2024-08-27 21:24:28,549 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:28,549 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-08-27 21:24:28,549 INFO    SenderThread:17731 [job_builder.py:build():440] Attempting to build job artifact
+2024-08-27 21:24:28,549 INFO    SenderThread:17731 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-08-27 21:24:28,549 WARNING SenderThread:17731 [job_builder.py:_log_if_verbose():274] No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2024-08-27 21:24:28,549 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 9
+2024-08-27 21:24:28,550 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:28,550 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 9
+2024-08-27 21:24:28,550 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:28,550 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-08-27 21:24:28,550 INFO    SenderThread:17731 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-08-27 21:24:28,655 INFO    Thread-12 :17731 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:28,655 INFO    SenderThread:17731 [dir_watcher.py:finish():388] scan: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files
+2024-08-27 21:24:28,655 INFO    SenderThread:17731 [dir_watcher.py:finish():402] scan save: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/requirements.txt requirements.txt
+2024-08-27 21:24:28,655 INFO    SenderThread:17731 [dir_watcher.py:finish():402] scan save: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/wandb-summary.json wandb-summary.json
+2024-08-27 21:24:28,656 INFO    SenderThread:17731 [dir_watcher.py:finish():402] scan save: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log output.log
+2024-08-27 21:24:28,656 INFO    SenderThread:17731 [dir_watcher.py:finish():402] scan save: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/conda-environment.yaml conda-environment.yaml
+2024-08-27 21:24:28,656 INFO    SenderThread:17731 [dir_watcher.py:finish():402] scan save: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/config.yaml config.yaml
+2024-08-27 21:24:28,656 INFO    SenderThread:17731 [dir_watcher.py:finish():402] scan save: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/wandb-metadata.json wandb-metadata.json
+2024-08-27 21:24:28,661 INFO    SenderThread:17731 [dir_watcher.py:finish():402] scan save: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/media/images/train_batch2_1_6ff226cf5ae600ef7926.jpg media/images/train_batch2_1_6ff226cf5ae600ef7926.jpg
+2024-08-27 21:24:28,661 INFO    SenderThread:17731 [dir_watcher.py:finish():402] scan save: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/media/images/labels_1_a8cbeb115a6e2a50b2c3.jpg media/images/labels_1_a8cbeb115a6e2a50b2c3.jpg
+2024-08-27 21:24:28,662 INFO    SenderThread:17731 [dir_watcher.py:finish():402] scan save: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/media/images/train_batch1_1_a7ddb3a67e6c1f6108a8.jpg media/images/train_batch1_1_a7ddb3a67e6c1f6108a8.jpg
+2024-08-27 21:24:28,662 INFO    SenderThread:17731 [dir_watcher.py:finish():402] scan save: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/media/images/train_batch0_1_1f3f9521a436f278da57.jpg media/images/train_batch0_1_1f3f9521a436f278da57.jpg
+2024-08-27 21:24:28,662 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 10
+2024-08-27 21:24:28,662 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:28,662 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 10
+2024-08-27 21:24:28,663 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:28,664 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-08-27 21:24:28,664 INFO    SenderThread:17731 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-27 21:24:28,701 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-27 21:24:28,701 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: poll_exit
+2024-08-27 21:24:29,225 INFO    wandb-upload_3:17731 [upload_job.py:push():130] Uploaded file /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/wandb-summary.json
+2024-08-27 21:24:29,229 INFO    wandb-upload_0:17731 [upload_job.py:push():130] Uploaded file /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/conda-environment.yaml
+2024-08-27 21:24:29,241 INFO    wandb-upload_4:17731 [upload_job.py:push():130] Uploaded file /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/requirements.txt
+2024-08-27 21:24:29,264 INFO    wandb-upload_1:17731 [upload_job.py:push():130] Uploaded file /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/output.log
+2024-08-27 21:24:29,395 INFO    wandb-upload_2:17731 [upload_job.py:push():130] Uploaded file /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/files/config.yaml
+2024-08-27 21:24:29,596 INFO    Thread-11 :17731 [sender.py:transition_state():626] send defer: 11
+2024-08-27 21:24:29,596 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:29,596 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 11
+2024-08-27 21:24:29,597 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:29,597 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-08-27 21:24:29,597 INFO    SenderThread:17731 [file_pusher.py:join():175] waiting for file pusher
+2024-08-27 21:24:29,597 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 12
+2024-08-27 21:24:29,598 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:29,598 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 12
+2024-08-27 21:24:29,598 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:29,598 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-08-27 21:24:29,598 INFO    SenderThread:17731 [file_stream.py:finish():601] file stream finish called
+2024-08-27 21:24:29,701 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-27 21:24:30,483 INFO    SenderThread:17731 [file_stream.py:finish():605] file stream finish is done
+2024-08-27 21:24:30,483 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 13
+2024-08-27 21:24:30,483 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: poll_exit
+2024-08-27 21:24:30,483 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:30,483 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 13
+2024-08-27 21:24:30,484 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:30,484 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-08-27 21:24:30,484 INFO    SenderThread:17731 [sender.py:transition_state():626] send defer: 14
+2024-08-27 21:24:30,484 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 21:24:30,484 INFO    HandlerThread:17731 [handler.py:handle_request_defer():184] handle defer: 14
+2024-08-27 21:24:30,484 DEBUG   SenderThread:17731 [sender.py:send():391] send: final
+2024-08-27 21:24:30,484 DEBUG   SenderThread:17731 [sender.py:send():391] send: footer
+2024-08-27 21:24:30,484 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: defer
+2024-08-27 21:24:30,484 INFO    SenderThread:17731 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-08-27 21:24:30,485 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-27 21:24:30,485 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: poll_exit
+2024-08-27 21:24:30,485 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: server_info
+2024-08-27 21:24:30,485 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-27 21:24:30,486 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: get_summary
+2024-08-27 21:24:30,486 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: sampled_history
+2024-08-27 21:24:30,486 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: server_info
+2024-08-27 21:24:30,488 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 21:24:30,685 DEBUG   SenderThread:17731 [sender.py:send_request():418] send_request: poll_exit
+2024-08-27 21:24:30,685 INFO    MainThread:17731 [wandb_run.py:_footer_history_summary_info():4035] rendering history
+2024-08-27 21:24:30,692 INFO    MainThread:17731 [wandb_run.py:_footer_history_summary_info():4067] rendering summary
+2024-08-27 21:24:30,692 INFO    MainThread:17731 [wandb_run.py:_footer_sync_info():3994] logging synced files
+2024-08-27 21:24:30,693 DEBUG   HandlerThread:17731 [handler.py:handle_request():158] handle_request: shutdown
+2024-08-27 21:24:30,693 INFO    HandlerThread:17731 [handler.py:finish():882] shutting down handler
+2024-08-27 21:24:31,486 INFO    WriterThread:17731 [datastore.py:close():296] close: /home/yjlee/yolo_pruning/ultralytics/wandb/run-20240827_212125-rgrchrug/run-rgrchrug.wandb
+2024-08-27 21:24:31,685 INFO    SenderThread:17731 [sender.py:finish():1631] shutting down sender
+2024-08-27 21:24:31,685 INFO    SenderThread:17731 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-27 21:24:31,685 INFO    SenderThread:17731 [file_pusher.py:join():175] waiting for file pusher

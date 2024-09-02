@@ -1,0 +1,127 @@
+Overriding model.yaml nc=80 with nc=8
+Transferred 319/355 items from pretrained weights
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /home/yjlee/yolo_pruning/datasets/KITTI-3/train/labels... 4802 images, 0 backgrounds, 0 corrupt:  92%|█████████▏| 4802/5223 [00:01<00:00, 3422.10it/s]
+[34m[1mtrain: [39m[22mScanning /home/yjlee/yolo_pruning/datasets/KITTI-3/train/labels... 5223 images, 0 backgrounds, 0 corrupt: 100%|██████████| 5223/5223 [00:01<00:00, 3410.83it/s]
+[34m[1mval: [39m[22mScanning /home/yjlee/yolo_pruning/datasets/KITTI-3/valid/labels... 1495 images, 0 backgrounds, 0 corrupt: 100%|██████████| 1495/1495 [00:00<00:00, 1592.23it/s]
+[34m[1mval: [39m[22mNew cache created: /home/yjlee/yolo_pruning/datasets/KITTI-3/valid/labels.cache
+Plotting labels to /home/yjlee/ultralytics/runs/detect/test9/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m SGD(lr=0.01, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 16 dataloader workers
+Logging results to [1m/home/yjlee/ultralytics/runs/detect/test9
+Starting training for 300 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+      1/300      2.43G      1.497      2.443      1.302         21        640: 100%|██████████| 164/164 [00:19<00:00,  8.49it/s]
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 47/47 [00:06<00:00,  7.67it/s]
+                   all       1495       8018      0.398      0.222      0.226      0.132
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+      2/300      2.55G      1.331      1.519        1.2         46        640: 100%|██████████| 164/164 [00:17<00:00,  9.47it/s]
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 47/47 [00:06<00:00,  7.70it/s]
+                   all       1495       8018       0.48      0.343       0.32      0.184
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+      3/300       2.5G      1.318      1.437      1.198         12        640: 100%|██████████| 164/164 [00:16<00:00, 10.04it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  96%|█████████▌| 45/47 [00:05<00:00,  8.09it/s]
+                   all       1495       8018       0.45      0.317      0.281      0.148
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 47/47 [00:05<00:00,  8.02it/s]
+
+
+
+
+
+
+
+      4/300      2.44G      1.333      1.386      1.215         25        640: 100%|██████████| 164/164 [00:16<00:00,  9.91it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  94%|█████████▎| 44/47 [00:04<00:00,  8.94it/s]
+                   all       1495       8018      0.514      0.297      0.292      0.167
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 47/47 [00:05<00:00,  8.91it/s]
+
+
+
+
+
+
+
+      5/300      2.69G       1.29      1.261      1.192         38        640: 100%|██████████| 164/164 [00:16<00:00, 10.10it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 47/47 [00:05<00:00,  9.10it/s]
+                   all       1495       8018      0.561      0.356      0.357      0.201
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+      6/300       2.5G      1.252      1.158      1.174         34        640: 100%|██████████| 164/164 [00:16<00:00, 10.08it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 47/47 [00:05<00:00,  9.02it/s]
+  0%|          | 0/164 [00:00<?, ?it/s]
+                   all       1495       8018       0.56      0.399      0.415      0.248
+
+
+
+
+
+
+
+
+      7/300      2.34G      1.225      1.088      1.165         33        640: 100%|██████████| 164/164 [00:16<00:00, 10.09it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 47/47 [00:05<00:00,  9.03it/s]
+                   all       1495       8018       0.64      0.414      0.441      0.258
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+      8/300      2.53G      1.219      1.071      1.161        176        640:  63%|██████▎   | 104/164 [00:10<00:06,  9.98it/s]
+Traceback (most recent call last):
+  File "/home/yjlee/.config/Ultralytics/DDP/_temp_mhqkopy0140235603799728.py", line 12, in <module>
+    results = trainer.train()
+  File "/home/yjlee/yolo_pruning/ultralytics/engine/trainer.py", line 208, in train
+    self._do_train(world_size)
+  File "/home/yjlee/yolo_pruning/ultralytics/engine/trainer.py", line 384, in _do_train
+    self.scaler.scale(self.loss).backward()
+  File "/home/yjlee/anaconda3/envs/yolo/lib/python3.8/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/yjlee/anaconda3/envs/yolo/lib/python3.8/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

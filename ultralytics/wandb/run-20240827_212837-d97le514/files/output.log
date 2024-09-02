@@ -1,0 +1,80 @@
+Overriding model.yaml nc=80 with nc=8
+Transferred 319/355 items from pretrained weights
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mtrain: [39m[22mScanning /home/yjlee/yolo_pruning/datasets/KITTI-3/train/labels.cache... 5223 images, 0 backgrounds, 0 corrupt: 100%|██████████| 5223/5223 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning /home/yjlee/yolo_pruning/datasets/KITTI-3/valid/labels.cache... 1495 images, 0 backgrounds, 0 corrupt: 100%|██████████| 1495/1495 [00:00<?, ?it/s]
+[34m[1mAMP: [39m[22mchecks passed ✅
+Plotting labels to test/test/labels.jpg...
+      1/300      2.27G      2.135      4.457      1.636         87        640:   1%|          | 1/164 [00:01<02:52,  1.06s/it]
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m SGD(lr=0.01, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 16 dataloader workers
+Logging results to [1mtest/test
+Starting training for 300 epochs...
+
+
+
+
+
+
+
+
+
+      1/300      2.42G      1.497      2.437      1.303         21        640: 100%|██████████| 164/164 [00:19<00:00,  8.36it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 47/47 [00:06<00:00,  7.53it/s]
+      2/300      2.32G        1.4      1.662       1.21        139        640:   3%|▎         | 5/164 [00:00<00:17,  9.24it/s]
+                   all       1495       8018      0.466      0.231      0.234      0.141
+
+
+
+
+
+
+
+
+      2/300      2.54G      1.327      1.522        1.2         46        640: 100%|██████████| 164/164 [00:16<00:00,  9.67it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 47/47 [00:06<00:00,  7.60it/s]
+      3/300      2.34G      1.291      1.459      1.183         78        640:   6%|▌         | 10/164 [00:01<00:15,  9.88it/s]
+                   all       1495       8018      0.471       0.34      0.319      0.183
+
+
+
+
+
+
+
+      3/300      2.48G       1.32      1.438      1.193         12        640: 100%|██████████| 164/164 [00:16<00:00,  9.82it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 47/47 [00:06<00:00,  7.75it/s]
+      4/300      2.28G      1.283      1.325      1.178        117        640:   1%|          | 1/164 [00:00<00:18,  8.91it/s]
+      4/300      2.28G      1.335      1.424      1.221        123        640:  12%|█▏        | 19/164 [00:01<00:14,  9.81it/s]
+Traceback (most recent call last):
+  File "/home/yjlee/.config/Ultralytics/DDP/_temp_qsgp2lbl139664666852944.py", line 12, in <module>
+    results = trainer.train()
+  File "/home/yjlee/yolo_pruning/ultralytics/engine/trainer.py", line 208, in train
+    self._do_train(world_size)
+  File "/home/yjlee/yolo_pruning/ultralytics/engine/trainer.py", line 376, in _do_train
+    self.loss, self.loss_items = self.model(batch)
+  File "/home/yjlee/anaconda3/envs/yolo/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yjlee/anaconda3/envs/yolo/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1008, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/yjlee/anaconda3/envs/yolo/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 969, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/yjlee/anaconda3/envs/yolo/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yjlee/yolo_pruning/ultralytics/nn/tasks.py", line 82, in forward
+    return self.loss(x, *args, **kwargs)
+  File "/home/yjlee/yolo_pruning/ultralytics/nn/tasks.py", line 261, in loss
+    return self.criterion(preds, batch)
+  File "/home/yjlee/yolo_pruning/ultralytics/utils/loss.py", line 209, in __call__
+    imgsz = torch.tensor(feats[0].shape[2:], device=self.device, dtype=dtype) * self.stride[0]  # image size (h,w)
+KeyboardInterrupt
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
