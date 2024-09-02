@@ -2,7 +2,7 @@
 ```
 pip install -e .
 pip install torch torchvison pyyaml
-datasets의 yaml의 path 경로 수정
+datasets의 yaml의 train, vaild, test 절대 경로로 수정
 ```
 # Folder Structure
 ```
