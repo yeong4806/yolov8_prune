@@ -44,7 +44,7 @@ python prune_finetune.py --bmodel big_model_path.pt --compress_ratio 0.6 --prune
 - ```--bmodel``` : 압축할 모델 weight file
 - ```--compress_ratio``` : pruning 시 big model 압축 비율 (default=0.6)
 - ```--compress_type``` : pruning 할 big model 구성 요소 선택 (default=H)
-- ```--method``` : pruning method 선택 (default=H)
+- ```--method``` : pruning method 선택 (default=L1)
 - ```--epoch``` : fine-funing epoch (default=150)
 - ```--device``` : 학습 및 평가에 사용할 device 지정(ex.single GPU (--device 0), multiple GPUs (--device 0,1), CPU (--device cpu))  (default=0)
 - ```--name``` : 학습 시 결과 및 model 저장할 폴더 이름. (default=test ex. checkpoints/test에 저장)
